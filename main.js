@@ -94,8 +94,7 @@ const sr = ScrollReveal({
   reset: true
 });
 sr.reveal(`.imgBx, .contentBx,
-          .about-data, .about-img,
-          .main-content-filter, .item
+          .about-data, .about-img,.item
 `, {
   interval: 200
 })
