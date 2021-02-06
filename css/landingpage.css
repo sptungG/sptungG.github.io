@@ -36,7 +36,7 @@
   }
   
   .hide span {
-    transform: translateY(101%);
+    transform: translateY(110%);
     display: inline-block;
     z-index: var(--z-fixed-max);
   }
