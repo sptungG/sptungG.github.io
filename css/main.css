@@ -166,7 +166,7 @@ nav.left-menu {
   display: none;
   position: fixed;
   bottom: 10px;
-  right: 30px;
+  right: 10px;
   z-index: var(--z-fixed-max);
   border: none;
   outline: none;
