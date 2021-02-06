@@ -473,25 +473,23 @@ i1{
   .filter-bar-child span{
     width: 50px;
     border: 1px solid #ffffff;
+    border-right: none;
     padding: 8px;
-    margin: 5px;
-    border-radius: 5px;
+    margin: 5px 0 5px 0px;
+    margin-right: none;
+    border-radius: 5px 0 0 5px ;
   }
   .filter-bar-child select {
     min-width: 120px !important;
   }
   .category-title {
-    font-size: 25px;
+    font-size: 26px;
     color: #ccc;
     text-align: center;
     vertical-align: middle !important;
   }
-  .category-title:hover{
-    transform: translateY(-5px);
-    transition: 0.4s;
-  }
   select {
-    margin: 5px;
+    margin: 5px 0;
     outline: none;
     width: 100%;
     height: 50px;
@@ -509,12 +507,13 @@ i1{
     text-indent: 8px;
 
     border: 1px solid #ffffff;
+    border-left: none;
     padding: 3px;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     padding: 3px;
-    border-radius: 7px;
+    border-radius: 0 5px 5px 0 ;
   }
   option{
     border: 1px solid #ffffff;
