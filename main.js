@@ -79,7 +79,7 @@ function prevSlideText() {
 const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
 tl.to(".text", { y: "0%", duration: 1, stagger: 0.25 });
-tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.4 });
+tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.5 });
 tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
 tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
 tl.fromTo(".imgBx", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1");
@@ -93,7 +93,7 @@ const sr = ScrollReveal({
   duration: 1500,
   reset: true,
 });
-sr.reveal(`.imgBx, .contentBx,
+sr.reveal(`
           .about-data, .about-img,.grid
 `, {
   interval: 200
