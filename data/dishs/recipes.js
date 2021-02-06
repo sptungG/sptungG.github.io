@@ -37,7 +37,7 @@ let recipes = [
             "Múc cánh gà chiên sốt nước mắm ra đĩa, trang trí ớt hoặc rau ngò cho đẹp mắt nhé!"
         ],
         "favorited_amount": "189",
-        description: 'Cánh gà là món ăn khoái khẩu trên bàn tiệc lớn nhỏ, đặc biệt là trong các bữa nhậu có cánh mày râu. Bên cạnh những cách chế biến đơn giản như luộc, hấp,…thì <i1>Cánh gà chiên nước mắm </i1> có cách làm phức tạp hơn một chút nhưng bù lại là vị ngon đặc trưng, đậm đà, hấp dẫn.'
+        description: 'Cánh gà là món ăn khoái khẩu trên bàn tiệc lớn nhỏ, đặc biệt là trong các bữa nhậu có cánh mày râu. Bên cạnh những cách chế biến đơn giản như luộc, hấp,…thì <i1>Cánh gà chiên nước mắm </i1>có cách làm phức tạp hơn một chút nhưng bù lại là vị ngon đặc trưng, đậm đà, hấp dẫn.'
     },
     {
         "id": "1",
@@ -111,7 +111,7 @@ let recipes = [
             "Cho món ăn ra đĩa, ăn cùng xà lách, cà chua bi nếu thích! Bữa cơm cả nhà bạn sẽ thật ấm cúng, quây quần bên nhau."
         ],
         "favorited_amount": "237",
-        description: 'Thịt gà là thực phẩm nhiều thịt nạc và ít mỡ, chứa nhiều protein. Rất nhiều món ăn ngon từ thịt gà bởi vì thịt gà không chỉ cung cấp nhiều dinh dưỡng mà còn giúp các bộ phận trong cơ thể như thận, gan, thần kinh hoạt động ổn định. Vì vậy hãy nhanh vào bếp thực ngay món <i1>Gà chiên nước mắm mật ong</i1> để thay đổi khẩu vị cho gia đình mà vẫn giữ được nguồn dinh dưỡng cần thiết.',
+        description: 'Thịt gà là thực phẩm nhiều thịt nạc và ít mỡ, chứa nhiều protein. Rất nhiều món ăn ngon từ thịt gà bởi vì thịt gà không chỉ cung cấp nhiều dinh dưỡng mà còn giúp các bộ phận trong cơ thể như thận, gan, thần kinh hoạt động ổn định. Vì vậy hãy nhanh vào bếp thực ngay món <i>Gà chiên nước mắm mật ong</i> để thay đổi khẩu vị cho gia đình mà vẫn giữ được nguồn dinh dưỡng cần thiết.',
     },
     {
         "id": "3",

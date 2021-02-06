@@ -64,16 +64,10 @@ typeSelect.addEventListener('change', () => {
     currentSearchFilter();
 });
 document.getElementById('search-bar-container').addEventListener('click', (e) => {
-    if(document.body.clientWidth >= 1700) {
-        if(e.target.tagName === 'DIV' || e.target.tagName === 'BUTTON') {
-            searchBar.value = '';
+    if(e.target.tagName === 'I' || e.target.tagName === 'BUTTON' || (e.target.tagName === 'DIV' && document.body.clientWidth >= 1700)) {
+        searchBar.value = '';
             currentSearchFilter();
             clearSearchButton.style.display = 'none'; 
-        }
-    } else {
-        searchBar.value = '';
-        currentSearchFilter();
-        clearSearchButton.style.display = 'none'; 
     }
 });
 searchBar.addEventListener('keyup', () => {
@@ -84,6 +78,36 @@ searchBar.addEventListener('keyup', () => {
         clearSearchButton.style.display = 'none';
     }
 });
+// USER CLICK USER'S ICON OPEN USER PAGE
+function openUserPage() {
+    document.body.style.overflow = 'hidden';
+    $('.user-page-outer-container').css('display','block');
+    loadUserFavorited();
+}
+function closeUserPage() {
+    document.body.style.overflow = 'visible';
+    $('.user-page-outer-container').css('display','none');
+} 
+// favorite btn 
+function favoriteThisRecipe(idx) {
+    let thisRecipe = recipes.filter((recipe) => recipe.id == idx)
+    if(activeUser[0].role != 'none') {
+        let favoriteBtn = document.querySelector('.love-action')
+         if(favoriteBtn.classList.contains('active')) {
+            thisRecipe[0].favorited_amount = Number(thisRecipe[0].favorited_amount) - 1;
+            activeUser[0].favorite.splice(activeUser[0].favorite.indexOf(idx),1);
+         } else{
+            thisRecipe[0].favorited_amount = Number(thisRecipe[0].favorited_amount) + 1;
+            activeUser[0].favorite.push(idx);
+         }
+         loadUserFavorited();
+         document.getElementById('favorited-amount').innerHTML = thisRecipe[0].favorited_amount;
+         document.querySelector('.love-action').classList.toggle('active');
+    }
+}
+// window.addEventListener('click', (e) => {
+//     console.log(e.target);
+// })
 
 
 

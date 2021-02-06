@@ -6,17 +6,52 @@
   margin: 0;
   box-sizing: border-box;
 }
+.user-page-blocker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
 
+.user-page-outer-container {
+  background: rgba(100, 100, 100, 0.5);
+  position: fixed;
+  display: none;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: var(--z-fixed-max);
+}
 body .container-user {
   background: #333;
-  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden; 
   padding-top: 1px;
-  font-family: "Poppins", sans-serif;
-  margin: 0 1px;
+  font-family: "Bree Serif";
+  position: fixed;
+  min-width: 80%;
+  height: 85%;
+  left: 10%;
+  top: 10%;
+  z-index: 5000;
+  /* display: flex;
+  max-width: 1000px;
+  width: 90%;
+  height: 85%;
+  position: fixed;
+  z-index: var(--z-fixed-max);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  overflow-y: scroll;
+  overflow-x: hidden; */
 }
 /* ======================== MAIN BODY USER ========================*/
 .main-bd {
   width: 100%;
+  height: 70%;
   display: flex;
   padding-right: 15px;
 }
@@ -31,12 +66,9 @@ body .container-user {
 }
 .profile-header h3{
   color: #fff;
-  font-family: "Lobster", cursive !important;
-  font-weight: lighter;
+  font-family: "Bree Serif" !important;
+  font-weight: 100;
   font-size: 43px !important;
-}
-.bio{
-  text-indent: 25px;
 }
 /* IMG */
 .profile-img {
@@ -78,8 +110,10 @@ body .container-user {
 }
 /* ======================== PROFILE SIDE ========================*/
 /* ======================== PROFILE SIDE ========================*/
+
 .profile-side {
   width: 300px;
+  height: 100%;
   background: #222;
   box-shadow: 0px 3px 5px black;
   padding: 90px 30px 20px;
@@ -132,59 +166,7 @@ body .container-user {
 .profile-nav-info, .address p {
   margin-right: 5px;
 }
-/* ======================== PROFILE OPTION ========================*/
-.profile-option{
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  right: 50px;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-  outline: none;
-  background: #e40046;
-}
-/*  */
-.profile-option:hover {
-  background: #fff;
-  border: 1px solid #e40046;
-}
-.profile-option:hover .notification i {
-  color: #e40046;
-}
 
-.profile-option:hover span {
-  background: #e40046;
-}
-/*  */
-.profile-option .notification i {
-  color: #fff;
-  font-size: 1.2rem;
-  transition: all 0.5s ease-in-out;
-}
-
-.profile-option .notification span{
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  background: #fff;
-  color: #e40046;
-  border: 1px solid #e40046;
-  padding: 5px;
-  border-radius: 50%;
-  height: 20px;
-  width: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.8rem;
-  font-weight: bold;
-}
 /* ======================== CREATE BUTTON ========================*/
 
 button.createbtn {
@@ -217,6 +199,16 @@ button.createbtn {
   width: 100%;
   z-index: -1;
 }
+.quit-user-page {
+  position: fixed;
+  z-index: 5004;
+  font-size: 25px;
+  color: #fff;
+  top: 80px;
+  left: 4%;
+  opacity: 60%;
+  display: none;
+}
 
 /*  */
 @media (max-width: 1100px) {
@@ -232,15 +224,45 @@ button.createbtn {
     top: 50px;
   }
 }
-
+.profile-option {
+  display: none;
+}
 @media (max-width: 900px) {
+  .tabBlock-tabs {
+    text-align: center;
+  }
+  .quit-user-page {
+    display: block;
+  }
+  .tabBlock-pane li {
+    text-decoration: underline;
+  }
+  .tabBlock-tab {
+    width: 33.333%;
+    height: 70px;
+    font-size: 15px;
+    padding: 15px 8px 8px 8px !important;
+    font-weight: normal !important;
+  }
+  .tabBlock-tab i{
+    display: block;
+  }
   body .container-user{
-    margin: 0 20px;
+    margin: 0 0px;
+    height: auto;
+    width: 100%;
+    height: auto;
+    top: 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    overflow-y: scroll;
   }
 
   .profile-header {
     display: flex;
-    height: 100%;
+    height: 370px;
     flex-direction: column;
     text-align: center;
     padding-bottom: 20px;
@@ -323,7 +345,7 @@ button.createbtn {
   content: "";
   display: table;
 }
-
+/* ======================== ========================*/
 .container-user ::before, ::after {
   box-sizing: border-box;
 }
@@ -361,6 +383,7 @@ body .right-side{
 
 .tabBlock {
   margin: 0 0 2.5rem;
+  height: 90.5%;
 }
 
 .tabBlock-tab {
@@ -372,8 +395,9 @@ body .right-side{
   color: #b5a8c5;
   box-shadow: 0px 3px 5px #222;
   cursor: pointer;
-  display: inline-block;
+  /* display: inline-block; */
   font-weight: 600;
+  margin-left: 0;
   float: left;
   padding: 0.625rem 1.25rem;
   position: relative;
@@ -384,7 +408,6 @@ body .right-side{
   border-right-style: solid;
 }
 .tabBlock-tab::before, .tabBlock-tab::after {
-  content: "";
   display: block;
   height: 4px;
   position: absolute;
@@ -403,7 +426,7 @@ body .right-side{
   left: 0;
   right: 0;
 }
-/*  */
+ /* */
 /* @media screen and (min-width: 700px) {
   .tabBlock-tab {
     width: fit-content;
@@ -426,7 +449,16 @@ body .right-side{
 .tabBlock-pane{
   padding: 0 15px;
 }
+.tabBlock-pane li {
+  cursor: pointer;
+}
+.tabBlock-pane li:hover {
+  text-decoration: underline;
+}
+ 
+
 .tabBlock-content {
+  height: 100%;
   background-color: #333;
   border: 2px solid #333;
   padding: 1.25rem;
@@ -437,4 +469,5 @@ body .right-side{
 .tabBlock-pane > :last-child {
   margin-bottom: 0;
 }
+
 

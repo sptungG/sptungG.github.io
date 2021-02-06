@@ -146,7 +146,7 @@ function showDetailItem(itemID) {
             thisRecipeType = 'Bữa sáng';
             break;
     }
-    let allCategory = `<span><i class="fa fa-map-o" aria-hidden="true"></i>. ${thisRecipeCategory}</span>| <span><i class="fa fa-check-square" aria-hidden="true"></i>. ${capitalizeFirstLetter(thisRecipe[0].difficult)}</span>| <span><i class="fa fa-clock-o" aria-hidden="true"></i>. ${thisRecipe[0].time} min</span>| <span><i class="fa fa-cutlery" aria-hidden="true"></i>. ${thisRecipeType}</span>`;
+    let allCategory = `<span><i class="fa fa-map-o" aria-hidden="true"></i>. ${thisRecipeCategory}</span>| <span><i class="fa fa-check-square" aria-hidden="true"></i>. ${capitalizeFirstLetter(thisRecipe[0].difficult)}</span>| <span><i class="fa fa-clock-o" aria-hidden="true"></i>. ${thisRecipe[0].time} min</span>| <span><i class="fa fa-cutlery" aria-hidden="true"></i>. ${thisRecipeType}</span>`
     recipeCategory[0].innerHTML = allCategory;
     document.getElementById('more-detail-img-big').src = thisRecipe[0].img;
     document.getElementById('more-detail-img-small').src = thisRecipe[0].img;
@@ -164,6 +164,15 @@ function showDetailItem(itemID) {
         instructionsList.insertAdjacentHTML('beforeend', 
         `<li>${ins}</li>`
         )
+    }
+    document.getElementById('favorited-amount').innerHTML = thisRecipe[0].favorited_amount;
+    // favorite btn
+    document.getElementsByClassName('love-action')[0].id = thisRecipe[0].id;
+    let favBtn = document.querySelector('.love-action');
+    if(activeUser[0].favorite.includes(thisRecipe[0].id)) {
+        favBtn.classList.add('active');
+    } else if(favBtn.classList.contains('active')) {
+        favBtn.classList.remove('active');
     }
     // get current yOffset
     yOffset = window.pageYOffset;
