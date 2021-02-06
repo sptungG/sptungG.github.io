@@ -64,12 +64,13 @@
     object-fit: cover;
     border-radius: 10% 5%;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
-    opacity: 0;
+    display: none;
     transition: 0.5s;
     background-position: center;
     z-index: var(--z-fixed-mid-1); 
 }
-.banner .imgBx img.active{
+.imgBx img.active{
+    display: block;
     opacity: 1;
 }
 /*==================== BUTTON PREV_NEXT SLIDE ====================*/
