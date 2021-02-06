@@ -915,26 +915,26 @@ i1{
   text-decoration: none;
   margin: 10px 5px;
   font-size: 20px;
-  color: chocolate;
+  color: #ffffff;
   font-weight: 500;
   font-style: italic;
 }
 .footer-content h3{
   font-family: var(--font-main);
-  color: var(--color-font);
+  color: chocolate;
   font-weight: 100;
   font-size: 26px;
   letter-spacing: 2px;
-  text-shadow: 0 0 3px #111;
+  text-shadow: 0 0 2px coral;
 }
 .footer-content a:hover{
-  color: #ffffff;
+  color: coral;
 }
 .footer-content span{
   padding-left: 20px;
   margin-bottom: 15px;
-  color: #111;
-  text-shadow: 0 0 3px #ffffff;
+  color: darkgoldenrod;
+  text-shadow: 0 0 2px chocolate;
   font-style: italic;
 }
 .footer-content i3{
