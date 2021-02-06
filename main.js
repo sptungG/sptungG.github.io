@@ -90,11 +90,11 @@ tl.fromTo(".pagination-button", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=
 const sr = ScrollReveal({
   origin: 'top',
   distance: '30px',
-  duration: 2000,
-  reset: true
+  duration: 1500,
+  reset: true,
 });
 sr.reveal(`.imgBx, .contentBx,
-          .about-data, .about-img,.item
+          .about-data, .about-img,.grid
 `, {
   interval: 200
 })

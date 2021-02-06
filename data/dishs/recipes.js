@@ -37,7 +37,7 @@ let recipes = [
             "Múc cánh gà chiên sốt nước mắm ra đĩa, trang trí ớt hoặc rau ngò cho đẹp mắt nhé!"
         ],
         "favorited_amount": "189",
-        description: 'Cánh gà là món ăn khoái khẩu trên bàn tiệc lớn nhỏ, đặc biệt là trong các bữa nhậu có cánh mày râu. Bên cạnh những cách chế biến đơn giản như luộc, hấp,…thì <i>Cánh gà chiên nước mắm </i>có cách làm phức tạp hơn một chút nhưng bù lại là vị ngon đặc trưng, đậm đà, hấp dẫn.'
+        description: 'Cánh gà là món ăn khoái khẩu trên bàn tiệc lớn nhỏ, đặc biệt là trong các bữa nhậu có cánh mày râu. Bên cạnh những cách chế biến đơn giản như luộc, hấp,…thì <i1>Cánh gà chiên nước mắm </i1> có cách làm phức tạp hơn một chút nhưng bù lại là vị ngon đặc trưng, đậm đà, hấp dẫn.'
     },
     {
         "id": "1",
@@ -74,7 +74,7 @@ let recipes = [
             "Trước khi bắc ra cho hành củ tươi (bổ làm đôi) vào đảo lẫn. Xúc ra đĩa, rắc rau mùi ăn nóng."
         ],
         "favorited_amount": "154",
-        description: '<i>Sườn xào chua ngọt</i> mềm thơm, đậm đà, hương vị chua ngọt hòa quyện ăn mãi chẳng chán, ai cũng gật gù khen ngon.',
+        description: '<i1>Sườn xào chua ngọt</i1> mềm thơm, đậm đà, hương vị chua ngọt hòa quyện ăn mãi chẳng chán, ai cũng gật gù khen ngon.',
     },
     {
         "id": "2",
@@ -111,7 +111,7 @@ let recipes = [
             "Cho món ăn ra đĩa, ăn cùng xà lách, cà chua bi nếu thích! Bữa cơm cả nhà bạn sẽ thật ấm cúng, quây quần bên nhau."
         ],
         "favorited_amount": "237",
-        description: 'Thịt gà là thực phẩm nhiều thịt nạc và ít mỡ, chứa nhiều protein. Rất nhiều món ăn ngon từ thịt gà bởi vì thịt gà không chỉ cung cấp nhiều dinh dưỡng mà còn giúp các bộ phận trong cơ thể như thận, gan, thần kinh hoạt động ổn định. Vì vậy hãy nhanh vào bếp thực ngay món <i>Gà chiên nước mắm mật ong</i> để thay đổi khẩu vị cho gia đình mà vẫn giữ được nguồn dinh dưỡng cần thiết.',
+        description: 'Thịt gà là thực phẩm nhiều thịt nạc và ít mỡ, chứa nhiều protein. Rất nhiều món ăn ngon từ thịt gà bởi vì thịt gà không chỉ cung cấp nhiều dinh dưỡng mà còn giúp các bộ phận trong cơ thể như thận, gan, thần kinh hoạt động ổn định. Vì vậy hãy nhanh vào bếp thực ngay món <i1>Gà chiên nước mắm mật ong</i1> để thay đổi khẩu vị cho gia đình mà vẫn giữ được nguồn dinh dưỡng cần thiết.',
     },
     {
         "id": "3",
@@ -149,7 +149,7 @@ let recipes = [
             "Múc thịt kho trứng cút ra tô hoặc thố cho ít hành lá cắt nhỏ vào và rắc thêm ít tiêu cho thơm.Thưởng thức cùng cơm nóng ngon tuyệt vời."
         ],
         "favorited_amount": "42",
-        description: '<i>Thịt kho trứng cút</i> là món ăn rất phổ biến trong bữa cơm gia đình các bạn nhỉ. Có gì đâu, thịt chọn miếng có cả nạc lẫn mỡ như thịt vai, ba chỉ, chân giò được kho mềm cùng những quả trứng cút nhỏ xinh. Nước hàng tự chưng vừa đủ độ để món ăn được nâu vàng sóng sánh, miếng thịt mềm ngậy đậm đà, trứng bùi bùi béo béo, chỉ vậy thôi cùng đủ “đánh bay” nồi cơm rồi đấy.',
+        description: '<i1>Thịt kho trứng cút</i1> là món ăn rất phổ biến trong bữa cơm gia đình các bạn nhỉ. Có gì đâu, thịt chọn miếng có cả nạc lẫn mỡ như thịt vai, ba chỉ, chân giò được kho mềm cùng những quả trứng cút nhỏ xinh. Nước hàng tự chưng vừa đủ độ để món ăn được nâu vàng sóng sánh, miếng thịt mềm ngậy đậm đà, trứng bùi bùi béo béo, chỉ vậy thôi cùng đủ “đánh bay” nồi cơm rồi đấy.',
     },
     {
         "id": "4",
@@ -184,7 +184,7 @@ let recipes = [
             "Cho muối và tiêu vào đảo tiếp. Xào trong khoảng 2-3 phút là xong rồi!"
         ],
         "favorited_amount": "207",
-        description: '<i>Măng tây</i> được mệnh danh là “rau hoàng đế”, bởi nó mang lại cho con người nhiều dưỡng chất tốt cho sức khoẻ. Có vô vàn cách chế biến với nguyên liệu này, trong đó có măng tây xào tỏi.',
+        description: '<i1>Măng tây</i1> được mệnh danh là “rau hoàng đế”, bởi nó mang lại cho con người nhiều dưỡng chất tốt cho sức khoẻ. Có vô vàn cách chế biến với nguyên liệu này, trong đó có măng tây xào tỏi.',
     },
     {
         "id": "5",
@@ -227,7 +227,7 @@ let recipes = [
             "Bào nhỏ phô mai mozzarella và phủ lên thịt gà. Nướng ở 180 độ trong 10’ để phô mai chảy. Nếu không có lò nướng, thì có thể sử dụng luôn chảo có nắp vung nhưng thịt gà sẽ bị ướt nhiều hơn so với việc bỏ vào lò nướng!"
         ],
         "favorited_amount": "125",
-        description: 'Vị cay xè, béo ngậy của món <i>Gà cay phô mai</i> sẽ giúp bạn thỏa mãn được vị giác của mình trong những ngày se lạnh.',
+        description: 'Vị cay xè, béo ngậy của món <i1>Gà cay phô mai</i1> sẽ giúp bạn thỏa mãn được vị giác của mình trong những ngày se lạnh.',
 
         
     },
@@ -271,7 +271,7 @@ let recipes = [
             "Đun sốt với lửa vừa và cho gà vào đảo đều để sốt bám quanh thịt gà và gà ngấm gia vị."
         ],
         "favorited_amount": "218",
-        description: '<i>Gà rán </i> luôn là món ăn được mọi lứa tuổi yêu thích bởi hương vị thơm ngon giòn rụm. Hãy tham khảo cách làm gà rán ngon giòn tan bên trong mềm ngọt cho các thành viên trong gia đình ăn bao nhiêu cũng không bị ngán.',
+        description: '<i1>Gà rán </i1> luôn là món ăn được mọi lứa tuổi yêu thích bởi hương vị thơm ngon giòn rụm. Hãy tham khảo cách làm gà rán ngon giòn tan bên trong mềm ngọt cho các thành viên trong gia đình ăn bao nhiêu cũng không bị ngán.',
     },
     {
         "id": "7",
@@ -313,7 +313,7 @@ let recipes = [
             "Nấu đến khi mì chín là món Rabokki của bạn đã xong rồi!"
         ],
         "favorited_amount": "117",
-        description: '<i>Rabokki,</i> <br> một sự kết hợp hoàn hảo và vô cùng thú vị giữa Ramyeon ( 라면, mì gói Hàn Quốc) và Tteokbokki (떡볶이, bánh gạo Hàn Quốc).',
+        description: '<i1>Rabokki,</i1> <br> một sự kết hợp hoàn hảo và vô cùng thú vị giữa Ramyeon ( 라면, mì gói Hàn Quốc) và Tteokbokki (떡볶이, bánh gạo Hàn Quốc).',
     },
     {
         "id": "8",
@@ -363,7 +363,7 @@ let recipes = [
             "Xếp tất cả các nguyên liệu đã sơ chế cho lên trên cơm."
         ],
         "favorited_amount": "176",
-        description: '<i>Bibimbap</i> hay còn được biết tới cái tên Cơm Trộn Hàn Quốc ở Việt Nam ta.Đây có thể nói là một món ăn làm nên tên tuổi của ẩm thực xứ sở kim chi, bởi vì dù một người không biết nhiều về nơi đây chắc chắn cũng đã từng nghe hay thưởng thức món ăn vô cùng hấp dẫn này',
+        description: '<i1>Bibimbap</i1> hay còn được biết tới cái tên Cơm Trộn Hàn Quốc ở Việt Nam ta.Đây có thể nói là một món ăn làm nên tên tuổi của ẩm thực xứ sở kim chi, bởi vì dù một người không biết nhiều về nơi đây chắc chắn cũng đã từng nghe hay thưởng thức món ăn vô cùng hấp dẫn này',
     },
     {
         "id": "9",
@@ -415,7 +415,7 @@ let recipes = [
             "Cho bánh phở áp chảo giòn 2 mặt lên đĩa, có thể dùng kéo cắt bánh phở thành từng miếng cho dễ ăn. Đổ hỗn hợp thịt bò xào rau lên trên, rắc chút hạt tiêu. Ăn kèm tương ớt và chanh."
         ],
         "favorited_amount": "241",
-        description: 'Nếu cảm thấy món phở xào thông thường đã hơi nhàm chán thì bạn thử đổi vị với món <i>Phở xào giòn</i> này xem sao nhé. Bí quyết của tụi mình khi làm món phở này là trộn bánh phở với lòng đỏ trứng và bột ngô. Hai thứ nguyên liệu này sẽ giúp cho bánh phở giòm rụm mà lại có vị đậm đà và màu vàng ươm từ trứng.',
+        description: 'Nếu cảm thấy món phở xào thông thường đã hơi nhàm chán thì bạn thử đổi vị với món <i1>Phở xào giòn</i1> này xem sao nhé. Bí quyết của tụi mình khi làm món phở này là trộn bánh phở với lòng đỏ trứng và bột ngô. Hai thứ nguyên liệu này sẽ giúp cho bánh phở giòm rụm mà lại có vị đậm đà và màu vàng ươm từ trứng.',
     },
     {
         "id": "10",
@@ -460,7 +460,7 @@ let recipes = [
             "Tiếp tục cho 2 quả trứng vào và đảo thật đều tay. Khi trứng đã khô lại, bạn cho nước xốt vào đảo nhanh tay. Thêm vào chảo nước dùng gà tiếp tục đảo. Cuối cùng, bạn cho hẹ và giá vào đảo lên một lần nữa rồi tắt bếp"
         ],
         "favorited_amount": "74",
-        description: 'Cách làm <i>Pad Thái</i> cũng vô cùng đơn giản. Điểm quan trọng của món này chính là nước sốt và sợi phở.<br>Thay vì dùng sợi phở tươi như trong các món phở xào ở nước ta, Pad Thái lại dùng sợi phở khô.Phở khô giúp cho nước sốt chua chua ngọt ngọt bám tốt hơn, đặc biệt là sợi phở sẽ cố độ dai nhất định, đem lại cảm giác ăn vô cùng thích thú.Sốt Pad Thái hương vị chủ đạo là vị chua của me, vị ngọt của đường thốt nốt và vị mặn của nước mắm. Tôm thường là protein được sử dụng thông dụng nhất, tuy nhiên các bạn cũng có thể dùng thịt gà, thịt bò hoặc thịt heo nhé.',
+        description: 'Cách làm <i1>Pad Thái</i1> cũng vô cùng đơn giản. Điểm quan trọng của món này chính là nước sốt và sợi phở.<br>Thay vì dùng sợi phở tươi như trong các món phở xào ở nước ta, Pad Thái lại dùng sợi phở khô.Phở khô giúp cho nước sốt chua chua ngọt ngọt bám tốt hơn, đặc biệt là sợi phở sẽ cố độ dai nhất định, đem lại cảm giác ăn vô cùng thích thú.Sốt Pad Thái hương vị chủ đạo là vị chua của me, vị ngọt của đường thốt nốt và vị mặn của nước mắm. Tôm thường là protein được sử dụng thông dụng nhất, tuy nhiên các bạn cũng có thể dùng thịt gà, thịt bò hoặc thịt heo nhé.',
     },
     {
         "id": "11",
@@ -503,7 +503,7 @@ let recipes = [
             "Sau khi chín, cho chả ra giấy thấm dầu và bầy ra đĩa, thưởng thức chả chấm cùng sốt chua ngọt hoặc sốt xí muội (mình hay dùng của cholimex, vị chuẩn lắm nhé)"
         ],
         "favorited_amount": "60",
-        description: '<i>Chả tôm kiểu Thái</i> thu hút người thưởng thức bởi vẻ đẹp tươi sáng bên ngoài và hương vị thơm ngon bên trong. Cái giòn rợm của bột áo ở ngoài kết hợp với vị ngọt đậm đà của tôm ở trong chắc chắn sẽ làm bạn không thể chối từ. Chả tôm giòn kiểu Thái chấm kèm sốt ớt chua ngọt chắc chắn là món ăn ngon tuyệt cho cả nhà.',
+        description: '<i1>Chả tôm kiểu Thái</i1> thu hút người thưởng thức bởi vẻ đẹp tươi sáng bên ngoài và hương vị thơm ngon bên trong. Cái giòn rợm của bột áo ở ngoài kết hợp với vị ngọt đậm đà của tôm ở trong chắc chắn sẽ làm bạn không thể chối từ. Chả tôm giòn kiểu Thái chấm kèm sốt ớt chua ngọt chắc chắn là món ăn ngon tuyệt cho cả nhà.',
     },
     {
         "id": "12",
@@ -548,7 +548,7 @@ let recipes = [
             "ớt và 2 chén cơm nước lạnh vào nồi thịt kho"
         ],
         "favorited_amount": "53",
-        description: '<i>Thịt kho Đông Pha </i>có tên gọi bắt nguồn từ tên của nhà thơ, học giả nổi tiếng Tô Đông Pha của triều đại Bắc Tống, Trung Quốc. Ông cũng là người rất yêu thích việc nấu nướng và món thịt kho mang tên ông chính là minh chứng cho điều này.',
+        description: '<i1>Thịt kho Đông Pha </i1>có tên gọi bắt nguồn từ tên của nhà thơ, học giả nổi tiếng Tô Đông Pha của triều đại Bắc Tống, Trung Quốc. Ông cũng là người rất yêu thích việc nấu nướng và món thịt kho mang tên ông chính là minh chứng cho điều này.',
     },
     {
         "id": "13",
@@ -595,7 +595,7 @@ let recipes = [
             "Bày xá xíu ra đĩa, rắc vừng đen và rau thơm để trang trí"
         ],
         "favorited_amount": "205",
-        description: '<i>Xá xíu</i>là món thịt heo quay hoặc nướng, xuất phát từ Quảng Đông- Trung Quốc. Thịt lợn được tẩm ướp rồi chế biến theo cách rất riêng, đem đến hương vị đậm đà, thú vị nhưng không kém phần hấp dẫn. Cùng học cách làm món xá xíu ngon đúng kiểu Quảng Đông nhé.',
+        description: '<i1>Xá xíu</i1> là món thịt heo quay hoặc nướng, xuất phát từ Quảng Đông- Trung Quốc. Thịt lợn được tẩm ướp rồi chế biến theo cách rất riêng, đem đến hương vị đậm đà, thú vị nhưng không kém phần hấp dẫn. Cùng học cách làm món xá xíu ngon đúng kiểu Quảng Đông nhé.',
     },
     {
         "id": "14",
@@ -643,7 +643,7 @@ let recipes = [
             "Sơ chế nguyên liệu:Thịt bò rửa sạch, thấm khô, thái thật mỏng.  Cho vào âu thịt 1 thìa cafe đường, đảo đều, để 10’ cho thấm (Ướp đường trước sẽ giúp thịt được mềm và đậm đà hơn). Sau đó ướp thịt với 1 thìa cafe bột nêm/ bột gia vị, 1 thìa cafe dầu hào, 1/2 thìa cafe hạt tiêu. Để 15’ cho thấm.Giá đỗ rửa sạch Hành, tỏi bóc bỏ, đập dập, băm nhỏ"
         ],
         "favorited_amount": "65",
-        description: '<i>Phở cuốn</i> là một trong những biến tấu của món phở bò quen thuộc vừa thanh mát lại vừa ngon miệng. Tuy không lâu đời như phở bò nhưng phở cuốn cũng đã đủ để có chỗ đứng trong lòng những người yêu ẩm thực Hà Nội. Phở cuốn không chỉ nức danh trong nước mà ngay cả những du khách nước ngoài đến Việt Nam cũng không thể quên được món ăn tuyệt vời này. ',
+        description: '<i1>Phở cuốn</i1> là một trong những biến tấu của món phở bò quen thuộc vừa thanh mát lại vừa ngon miệng. Tuy không lâu đời như phở bò nhưng phở cuốn cũng đã đủ để có chỗ đứng trong lòng những người yêu ẩm thực Hà Nội. Phở cuốn không chỉ nức danh trong nước mà ngay cả những du khách nước ngoài đến Việt Nam cũng không thể quên được món ăn tuyệt vời này. ',
     },
     {
         "id": "15",
@@ -700,7 +700,7 @@ let recipes = [
             "Trút ra đĩa,rắc thêm hạt tiêu"
         ],
         "favorited_amount": "223",
-        description: '<i>Bóng xào thập cẩm </i>là một trong những món ăn truyền thống hầu như không thể thiếu trong mâm cơm ngày Tết, đám cưới hay mâm cỗ giỗ chạp. Về cơ bản, nguyên liệu cũng như cách làm món bóng xào thập cẩm cũng tương tự như các món xào thập cẩm khác, chỉ khác ở chỗ là còn có thêm nguyên liệu bóng giòn sần sật ngon miệng. ',
+        description: '<i1>Bóng xào thập cẩm </i1>là một trong những món ăn truyền thống hầu như không thể thiếu trong mâm cơm ngày Tết, đám cưới hay mâm cỗ giỗ chạp. Về cơ bản, nguyên liệu cũng như cách làm món bóng xào thập cẩm cũng tương tự như các món xào thập cẩm khác, chỉ khác ở chỗ là còn có thêm nguyên liệu bóng giòn sần sật ngon miệng. ',
     },
     {
         "id": "16",
@@ -743,7 +743,7 @@ let recipes = [
             "Pha nước chấm"
         ],
         "favorited_amount": "140",
-        description: 'Ốc chứa nhiều chất dinh dưỡng, đặc biệt là canxi và các loại vitamin A, B1, B2…. Trong y học, ốc đồng có vị ngọt, tính hàn nên thanh nhiệt, lợi thủy, trị đái khó, giải độc tiêu nhọt, trĩ ra máu, mắt đỏ sưng tấy…. Từ xa xưa, ốc đã là nguyên liệu chế biến ra nhiều món ngon, nhất là <i>Ốc xào sả ớt</i> và ốc xào măng. Cùng chinh phục hai món này qua công thức nấu ăn để làm món ốc xào sả ớt và cách làm ốc xào măng dưới đây nhé!',
+        description: 'Ốc chứa nhiều chất dinh dưỡng, đặc biệt là canxi và các loại vitamin A, B1, B2…. Trong y học, ốc đồng có vị ngọt, tính hàn nên thanh nhiệt, lợi thủy, trị đái khó, giải độc tiêu nhọt, trĩ ra máu, mắt đỏ sưng tấy…. Từ xa xưa, ốc đã là nguyên liệu chế biến ra nhiều món ngon, nhất là <i1>Ốc xào sả ớt</i1> và ốc xào măng. Cùng chinh phục hai món này qua công thức nấu ăn để làm món ốc xào sả ớt và cách làm ốc xào măng dưới đây nhé!',
     },
     {
         "id": "17",
@@ -776,7 +776,7 @@ let recipes = [
             "Nêm nếm lại cho vừa"
         ],
         "favorited_amount": "202",
-        description: '<i>Gà rang gừng</i> là sự kết hợp hoàn hảo giữa thịt gà và gừng tươi thái sợi để tạo nên món thịt gà rang dậy mùi thơm. ',
+        description: '<i1>Gà rang gừng</i1> là sự kết hợp hoàn hảo giữa thịt gà và gừng tươi thái sợi để tạo nên món thịt gà rang dậy mùi thơm. ',
     },
     {
         "id": "18",
@@ -821,7 +821,7 @@ let recipes = [
             "Đảo đều cho tôm và thịt"
         ],
         "favorited_amount": "64",
-        description: '<i>Tôm rang thịt</i> là món ăn được nhiều người yêu thích, có cách làm đơn giản, nhanh gọn, hương vị đậm đà, hấp dẫn. Với sự kết hợp tinh tế từ thịt và tôm, xen lẫn mùi tỏi phi, hài hòa gia vị chắc chắn sẽ khiến bạn chỉ muốn ăn mãi không thôi.',
+        description: '<i1>Tôm rang thịt</i1> là món ăn được nhiều người yêu thích, có cách làm đơn giản, nhanh gọn, hương vị đậm đà, hấp dẫn. Với sự kết hợp tinh tế từ thịt và tôm, xen lẫn mùi tỏi phi, hài hòa gia vị chắc chắn sẽ khiến bạn chỉ muốn ăn mãi không thôi.',
     },
     {
         "id": "19",
@@ -859,7 +859,7 @@ let recipes = [
             "Đảo đều cho tôm và thịt"
         ],
         "favorited_amount": "172",
-        description: "<i>Kuymak</i> is a regional meal of Turkey's Black Sea region's sides. Its primary ingredients are corn meal and cheese. and is typically served with bread and a spoon. Viet ngu add kuymak vao lam qq gi eo co cong thuc :))",
+        description: "<i1>Kuymak</i1> is a regional meal of Turkey's Black Sea region's sides. Its primary ingredients are corn meal and cheese. and is typically served with bread and a spoon. Viet ngu add kuymak vao lam qq gi eo co cong thuc :))",
     },
     {
         "id": "20",
@@ -900,6 +900,6 @@ let recipes = [
             "Bước 3: Trình bày và thưởng thức bánh kếp: Khi bánh đã chín vàng, bạn gắp bánh ra đĩa xếp chồng từ 2 – 3 chiếc bánh lên với nhau, sau đó rưới mật ong hoặc chocolate lên trên rồi dùng muỗng xắn từng phần bánh và thưởng thức."
         ],
         "favorited_amount": "53",
-        description:'Bánh <i>Pancake</i> còn được biết đến với tên gọi quen thuộc là bánh kếp – một món bánh khá phổ biến ở nhiều quốc gia trên thế giới. Nhờ hương vị thơm ngon mới lạ, nhiều dưỡng chất mà chỉ trong vài năm trở lại đây, khi du nhập vào Việt Nam thì bánh pancake đã được rất nhiều người ưa chuộng.',
+        description:'Bánh <i1>Pancake</i1> còn được biết đến với tên gọi quen thuộc là bánh kếp – một món bánh khá phổ biến ở nhiều quốc gia trên thế giới. Nhờ hương vị thơm ngon mới lạ, nhiều dưỡng chất mà chỉ trong vài năm trở lại đây, khi du nhập vào Việt Nam thì bánh pancake đã được rất nhiều người ưa chuộng.',
     }
 ]

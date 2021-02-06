@@ -13,7 +13,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 10;
+  z-index: var(--z-fixed-max);
 }
 
 .signup-form,
@@ -30,7 +30,7 @@
   transition:.5s ; 
   visibility: hidden;
   opacity: 0;
-  z-index: 5003;
+  z-index: var(--z-fixed-max); 
 }
 
 .form{
