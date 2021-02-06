@@ -352,10 +352,12 @@ i1{
   #btn_prev{
     left: 0;
     border-radius: 0 8px 8px 0;
+    border-left: none;
   }
   #btn_next{
     right: 0;
     border-radius: 8px 0 0 8px;
+    border-right: none;
   }
   main #btn_prev, main #btn_next {
     padding: 20px 15px;
@@ -365,7 +367,7 @@ i1{
     user-select: none;
     cursor: pointer;
     position: fixed;
-    top: 70%;
+    top: 50%;
     z-index: var(--z-fixed-mid);
     background-color: rgba(126, 126, 126, 0.411);
     color: black;
