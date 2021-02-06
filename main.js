@@ -93,7 +93,7 @@ const sr = ScrollReveal({
   duration: 1500,
   reset: true,
 });
-sr.reveal(`.banner-container,
+sr.reveal(`.imgBx,
           .about-data, .about-img,.grid
 `, {
   interval: 100
