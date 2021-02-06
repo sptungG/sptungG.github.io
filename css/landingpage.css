@@ -70,8 +70,8 @@
     z-index: var(--z-fixed-mid-1); 
 }
 .imgBx img.active{
-    display: block;
-    opacity: 1;
+    display: block !important;
+    opacity: 1 !important;
 }
 /*==================== BUTTON PREV_NEXT SLIDE ====================*/
 .controls{
