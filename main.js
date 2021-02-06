@@ -90,14 +90,14 @@ tl.fromTo(".controls", { opacity: 0 }, { opacity: 1, duration: 1.5 }, "-=1");
 const sr = ScrollReveal({
   origin: 'top',
   distance: '30px',
-  duration: 1800,
+  duration: 2000,
   reset: true,
 });
-sr.reveal(`.imgBx, .contentBx,
+sr.reveal(`
           .about-data, .about-img,
           .grid
 `, {
-  interval: 100
+  interval: 200
 });
 /*====================  ====================*/
 
