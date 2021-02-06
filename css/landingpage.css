@@ -144,6 +144,7 @@
 .contentBx div a:hover{
     background-color: rgba(122, 122, 122, 0.767);
     transition: 0.5s;
+    text-shadow: 0 0 3px #ffffff;
     transform: translateY(5px);
 }
 /*==================== ABOUT US ====================*/
@@ -235,6 +236,7 @@ i2{
 .about-data a:hover{
     background-color: rgba(122, 122, 122, 0.767);
     transition: 0.5s;
-    transform: translateY(-5px);
+    text-shadow: 0 0 3px #ffffff;
+    transform: translateY(5px);
 }
 /*====================  ====================*/
