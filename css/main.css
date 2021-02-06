@@ -3,7 +3,7 @@
   margin: 0;
 }
 body{
-  background-image: url("https://francarstens.github.io/weAreCooking--HTML/images/body_background.jpg");
+  background-image: url("body_background.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
