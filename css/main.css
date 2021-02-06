@@ -907,6 +907,10 @@ i1{
 .footer img{
   width: 120px;
   margin: 5px;
+  cursor: pointer;
+}
+.logo-title{
+  cursor: pointer;
 }
 .footer-content ul{
   list-style-type: none;
