@@ -146,7 +146,7 @@ function showDetailItem(itemID) {
             thisRecipeType = 'Bữa sáng';
             break;
     }
-    let allCategory = `<span>🌏 ${thisRecipeCategory}</span>| <span>✅ Độ khó: ${capitalizeFirstLetter(thisRecipe[0].difficult)}</span>| <span>🕗 </i>Thời gian: ${thisRecipe[0].time} min</span>| <span>🍴 Loại: ${thisRecipeType}</span>`;
+    let allCategory = `<span><i class="fa fa-map-o" aria-hidden="true"></i>. ${thisRecipeCategory}</span>| <span><i class="fa fa-check-square" aria-hidden="true"></i>. ${capitalizeFirstLetter(thisRecipe[0].difficult)}</span>| <span><i class="fa fa-clock-o" aria-hidden="true"></i>. ${thisRecipe[0].time} min</span>| <span><i class="fa fa-cutlery" aria-hidden="true"></i>. ${thisRecipeType}</span>`;
     recipeCategory[0].innerHTML = allCategory;
     document.getElementById('more-detail-img-big').src = thisRecipe[0].img;
     document.getElementById('more-detail-img-small').src = thisRecipe[0].img;
