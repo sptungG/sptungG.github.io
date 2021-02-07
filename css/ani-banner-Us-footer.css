@@ -84,6 +84,7 @@
  }
  
  .contentBx h2{
+     font-family: var(--font-main);
      color: #fff;
      font-size: 2em;
  }

@@ -411,7 +411,7 @@ html {
     width: 100%;
     left: 0;
     top: 0;
-    z-index: var(--z-fixed-mid-1);
+    z-index: var(--z-fixed-max);
   }
   .form-container {
     display: flex;
@@ -419,7 +419,7 @@ html {
     width: 100%;
     height: 99%;
     position: fixed;
-    z-index: var(--z-fixed-mid-1);
+    z-index: var(--z-fixed-max);
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
@@ -631,7 +631,7 @@ html {
        font: 900 1.5em/1 'Montserrat';
        justify-content: flex-end;
        padding: 0.125em 0.25em;
-       z-index: var(--z-fixed-mid);
+       z-index: var(--z-fixed-max);
   }
    ol.gradient-list > li:nth-child(10n+1):before {
        background: linear-gradient(135deg, rgba(162, 237, 86, 0.2) 0%, rgba(253, 220, 50, 0.2) 100%);
