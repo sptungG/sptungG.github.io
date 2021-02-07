@@ -237,6 +237,7 @@
     text-align: center;
 }
 .new-recipes-container .quit-user-page{
+    cursor: pointer;
     color: #111;
 }
 @media (max-width: 800px) {
