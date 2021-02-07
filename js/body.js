@@ -91,7 +91,7 @@ showRecipes = (page) => {
             btn_next.style.visibility = "visible";
         }
         allItems = document.getElementsByClassName("item");
-    function resizeInstance(instance){
+        function resizeInstance(instance){
             item = instance.elements[0];
           resizeGridItem(item);
    }        
