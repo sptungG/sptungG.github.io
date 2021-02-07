@@ -1,12 +1,12 @@
-.menu a, h2{
+/* .menu a, h2{
     font-family: "Lobster", cursive;
     font-weight: lighter;
     text-decoration: none;
     text-transform: initial;
     font-size: 25px;
-    color:gold;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.65);
-}
+} */
+/* ================ Login Form Popup ================  */
 .login-container {
   position: fixed;
   top: 0;
@@ -15,7 +15,7 @@
   bottom: 0;
   z-index: var(--z-fixed-max);
 }
-
+/* Form */
 .signup-form,
 .signin-form
 {
@@ -52,10 +52,10 @@
   margin: auto;
   color: #fff;
 } 
+
  .form .row{
   display: flex;
   justify-content: space-between;
-
 } 
 .form .row input{
   margin-bottom:0;
@@ -97,8 +97,7 @@ border-bottom: 1px solid #434a52;
   bottom: 0;
   background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
 }
-
-
+/* Button */
 .form button {
 	background-color:#265592;
 	border: none;
@@ -114,6 +113,7 @@ border-bottom: 1px solid #434a52;
   .form button:hover {
 	background:#214a80;
   }
+/* Forgot in4 */
   .form .forgot {
     display: block;
     text-align: center;
@@ -127,13 +127,7 @@ border-bottom: 1px solid #434a52;
     opacity: 1;
     text-decoration: none;
   }
-/* =========================================================CODE SIGNIN/SIGNUP======================================================================= */
-.sign-in{
-  background-color: rgb(223, 37, 37);
-}
-.sign-in a{
-  color:#ffffff !important;
-}
+/* *************** Responsive Login Form **************** */
 @media screen and (max-width: 550px) {
   .signup-form,
 .signin-form {
@@ -156,7 +150,7 @@ border-bottom: 1px solid #434a52;
       padding: 8px 10px;
     }
 }
-/* user page icon */
+/*================ User Page Icon ================*/
 .user-page {
   width: 40px;
   height: 40px;

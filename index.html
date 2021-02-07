@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/new_recipe_popup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -26,20 +27,20 @@
     <div class="header-menu-position">
       <nav class="left-menu"> 
         <a href="index.html" title="HOME"><img src="css/logo.jpg" alt=""></a>
-        <a href="#" title="HOME"><i class="fa fa-fw fa-home"></i> Home</a>
-        <a href="#">VietNamese</a>
+        <a href="#home" title="HOME"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="#about" title="#About Us">About Us</a> 
         <a href="#dishes" title="Get a random Meal.">Hungry?</a>
-        <a href="#about" title="#About Us">About Us</a>
+        <a href="#contact" title="#Contact Us">Contact Us</a> 
       </nav>
 
       <nav class="left-menu-hamburger" >
         <button href="#" title="MENU" class="icon" onclick="dropDownMenu()"><a>☰</a></button>       
         <ul id="drop-down-content" class="drop-down-content">
           <li><a href="index.html" title="HOME"><img src="css/logo.jpg" alt=""></a></li>
-            <li><a href="#" title="HOME"><i class="fa fa-fw fa-home"></i> Home</a></li>
-            <li><a href="#">VietNamese</a></li>
-            <li><a href="#dishes" title="Get a random Meal.">Hungry?</a></li>
+            <li><a href="#home" title="HOME"><i class="fa fa-fw fa-home"></i> Home</a></li>
             <li><a href="#about" title="#About Us">About Us</a></li>
+            <li><a href="#dishes" title="Get a random Meal.">Hungry?</a></li>
+            <li><a href="#contact" title="#Contact Us">Contact Us</a></li> 
         </ul>
       </nav>
 
@@ -139,7 +140,7 @@
          </div>
 
           <div class="profile-btn">
-            <button class="createbtn" id="Create-post"> <i class="fa fa-plus-circle" aria-hidden="true"></i> Create recipe</button>
+            <button class="createbtn" id="Create-post" onclick="openNewRecipePopup()"> <i class="fa fa-plus-circle" aria-hidden="true"></i> Create recipe</button>
           </div>
         </div>
       </div>
@@ -176,10 +177,10 @@
     </div>
 
   </div>
-  <div class="quit-user-page" onclick="closeUserPage()"><i class="fas fa-arrow-left"></i></div>
+  <div class="quit-user-page" onclick="closeUserPage()"><i class="fa fa-arrow-left"></i></div>
 </div>
 <!-- SLIDES -->
-<section class="banner"> 
+<section class="banner" id="home"> 
   <div class="slideshow" id="slideshow">
     <div>
       <img class="imgBx" src="http://culinaryfrank.com/wp-content/uploads/2019/03/culinary-frank-fish-sauce-chicken-wings-3.jpg">
@@ -241,13 +242,143 @@
     </div>
   </div>
 </section>
-
+<!--  -->
+<div class="new-recipes-container" style="display: none;">
+  <div class="new-recipes-blocker" onclick="closeNewRecipePopup()">
+  </div>
+  <div class="new-recipes-popup">
+    <div class="list-recipes">
+      <div class="separator"><h2>Món đã tạo</h2></div>
+      <div class="item-table">
+        <table id="recipes-table">
+            <thead>
+               <th>Tên recipe</th>
+               <th>Danh mục</th>   
+               <th>Độ khó</th>
+               <th>Thời gian</th>
+               <th>Loại món</th>
+               <th>Actions</th>
+            </thead>
+            <tbody id="ts_body">
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <div class="new-recipes-form">
+      <div class="new-recipe-form-title">
+        <div class="separator"><h2>Tạo món mới</h2></div>
+      </div>
+      <div class="new-recipes-basis-info-con">
+        <div class="new-recipes-inputs">
+          <div class="new-recipes-input">
+            <span>Tên món</span>
+            <input type="text" placeholder="Nhập tên món" id="new-item-name">
+          </div>
+          <div class="new-recipes-input">
+            <span>Image URL</span>
+            <input type="text" placeholder="Image url..." id="new-item-img">
+          </div>
+          <div class="new-recipes-input">
+            <span>Description</span>
+            <input type="text" placeholder="Chú thích món" id="new-recipes-description">
+          </div>
+        </div>
+        <div class="new-recipes-category-selects">
+          <div class="new-recipes-category-select">
+            <span>Danh mục</span>
+            <select name="category" id="new-item-category">
+                <option value="viet">Món Việt</option>
+                <option value="foreign">Món ngoại</option>
+                <option value="asia">Món Á</option>
+            </select>
+        </div>
+        <div class="new-recipes-category-select">
+            <span >Độ khó</span>
+            <select name="difficult" id="new-item-difficult">
+                <option value="hard">Khó</option>
+                <option value="medium">Vừa</option>
+                <option value="easy">Dễ</option>
+            </select>
+        </div>
+        <div class="new-recipes-category-select">
+            <span >Thời gian:</span>
+            <select name="time" id="new-item-time">
+                <option value="20">~20 min</option>
+                <option value="30">~30 min</option>
+                <option value="60">~60 min</option>
+            </select>
+        </div>
+        <div class="new-recipes-category-select">
+            <span >Loại món:</span>
+        <select name="type" id="new-item-type">
+            <option value="main">Bữa chính</option>
+            <option value="side">Bữa phụ</option>
+            <option value="bf">Bữa sáng</option>
+        </select>
+        </div>
+        </div>
+      </div>
+      <div class="separator"><h2>Thêm thành phần</h2></div>
+      <div class="new-recipes-ingredients-container">
+        <div class="ingredients-left-con">
+          <div class="new-recipes-ingredients-form">
+            <select id="ingredients-type">
+              <option value="vegetable">Loại nguyên liệu</option>
+              <option value="meat">Thịt</option>
+              <option value="vegetable">Rau củ</option>
+              <option value="seasoning">Gia vị</option>
+            </select>
+            <select id="ingredients">
+              <option value="Tỏi">Tỏi</option>
+            </select>
+          </div>
+        <div class="ingredient-info">
+          <div class="ingredient-img">
+            <img src="images/10.jpg" alt="" id="ingredient-img">
+          </div>
+        </div>  
+        <div class="ingredient-amount">
+          <input type="text" placeholder="Số lượng" id="ingredient-amount">
+          <span class="ingredient-measurement">g</span>
+        </div>
+        <div class="ingredient-add-btn">
+          <button id="ingredient-add-btn">Add</button>
+        </div>
+        </div>
+        <div class="ingredient-right-con">
+          <h3>Nguyên liệu</h3>
+          <ul class="new-ingredients-ul" id="new-ingredients-ul">
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="separator"><h2>Thêm các bước làm</h2></div>
+    <div class="new-recipes-instruction">
+      <div class="new-recipes-instruction-form">
+        <ol class="gradient-list" id="instruction-ol">
+        </ol>
+      </div>
+      <div class="insutruction-input">
+        <input type="text" placeholder="Nhập bước tiếp theo" id="insutruction-input">
+      </div>
+      <div class="new-recipes-instruction-btn">
+        <button onclick="createNewInstruction()"><i class="fas fa-plus-circle"></i></button>
+      </div>
+    </div>
+    <div class="new-recipes-confirm-buttons-container">
+      <div class="new-recipes-confirm-button">
+        <button id="new-item-add-btn">Confirm</button>
+        <button onclick="resetNewRecipesForm()">Reset</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div style="text-align: center;"> <h2  style="width: 100%; font-size: 30px;"> - Dishes we offer - </h2> </div> -->
 <!-- FILTER AND SEARCH -->
-<main id="dishes">
+<section class="section" id="dishes">
   <span class="section-subtitle"><i2>#</i2>Special</span>
   <h2 class="section-title">Menu of the week</h2>
 <div class="main-content-filter">
-<div id="img-search" class="img-search"><img src="css/Stuck at Home - Breakfast Time (3).png"> </div>
       <div class="filter-bar-child">
         <span class="category-title" title="Danh mục."><i class="fa fa-map-o" aria-hidden="true"></i></span>
         <select name="category" id="category-select">
@@ -284,10 +415,10 @@
             <option value="bf">Bữa sáng</option>
         </select>
       </div>
-      <div class="search-bar" id="search-bar-container"><input type="text" name="seach" id="search-bar" placeholder="Tìm kiếm món ăn..."><button id="clear-search-btn"><i class="fas fa-times"></i></button></div> 
+      <div class="search-bar" id="search-bar-container"><input type="text" name="seach" id="search-bar" placeholder="Tìm kiếm món ăn..."><button id="clear-search-btn"><i class="fa fa-times"></i></button></div> 
 
 </div>
-  <div class="pagination-button btn-top" href="#dishes"><button id="btn_prev" href="#dishes" onclick="prevPage()"><i class="fa fa-chevron-left" aria-hidden="true"></i></button><button id="btn_next" href="#dishes" onclick="nextPage()"><i class="fa fa-chevron-right" aria-hidden="true"></i></button></div>
+  <div class="pagination-button btn-top" ><a href="#dishes"><button id="btn_prev" onclick="prevPage()"><i class="fa fa-chevron-left" aria-hidden="true"></i></button><button id="btn_next" onclick="nextPage()"><i class="fa fa-chevron-right" aria-hidden="true"></i></button></a></div>
   </div>
 
 <!--  -->
@@ -391,9 +522,23 @@
           </div>
     <button type="button" class="btn-cancel" onclick="closeForm()"><a>Close</a></button>
     </div>
-</main>
+</section>
+<!-- CONTACT US -->
+<section class="contact section" id="contact">
+    <div class="contact-container">
+        <div class="contact-data">
+            <span class="contact-subtitle">Let's talk</span>
+            <h2 class="contact-title">Contact us</h2>
+            <p class="contact-description">If you want to reserve a table in our Blog, contact us and we will attend you quickly, with our 24/7 chat service.</p>
+        </div>
+
+        <div class="contact-button">
+            <a href="#" class="button">Contact us now</a>
+        </div>
+    </div>
+</section>
 <!-- FOOTER -->
-<footer class="footer" id="footer">
+<footer class="footer section" id="footer">
           <div class="footer-container">
             <div class="footer-content">
                 <a href="#" title="HOME" ><img src="css/logo.jpg" alt=""></a>
@@ -479,6 +624,7 @@
              <!--========== LOGIN FORM ==========--> 
     <script src="js/header.js"></script>
             <!--========== MAIN ==========--> 
+    <script src="js/admin-page.js"></script>
     <script src="js/body.js"></script>
     <script src="js/bodyController.js"></script>
     <script src='main.js'></script>
