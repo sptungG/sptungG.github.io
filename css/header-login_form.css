@@ -154,7 +154,10 @@ nav.left-menu {
   nav.left-menu {
       display: none;
   }
-  
+  .header-menu-position {
+    box-shadow: none;
+    background-color: rgba(128, 128, 128, 0);
+  }
   .left-menu-hamburger ,.left-menu-hamburger li{
     position: relative;
     display: block;

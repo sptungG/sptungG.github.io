@@ -294,11 +294,15 @@
   justify-content: center;
   justify-content: space-around;
 }
+.contact{
+  margin: 40px 0 20px 0;
+}
 .contact-container{
-  margin-top: 60px;
+  margin-bottom: 0;
   justify-content: flex-start;
   align-items: center;
 }
+
 .contact-data{
 width: 50%;
 margin-left: 5%;
@@ -348,7 +352,7 @@ padding: 20px 30px;
 /* Logo subtitle */
 .footer-content span{
   padding-left: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   color: darkgoldenrod;
   text-shadow: 0 0 2px chocolate;
   font-style: italic;

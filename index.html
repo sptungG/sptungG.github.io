@@ -21,7 +21,7 @@
 </head>
 <body>
   
-<!-- HEADER -->
+<!--============================ HEADER ============================-->
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <header>
     <div class="header-menu-position">
@@ -68,7 +68,9 @@
    }
   </script>
 </header>
-<!-- LOGIN FORM -->
+
+<!--============================ LOGIN FORM - POPUP ============================-->
+
 <div class="login-container" id="login-container" style="display: none;">
   <div class='container' onclick="closeLoginForm()">
   </div>
@@ -105,7 +107,9 @@
     </div>
   </div>
 </div>
-<!-- USER PAGE -->
+
+<!--============================ USER PAGE -POPUP ============================-->
+
 <div class="user-page-outer-container" style="display: none;">
   <div class="user-page-blocker" onclick="closeUserPage()">
   <!--  -->
@@ -145,8 +149,6 @@
       </div>
 
       <div class="right-side">
-      <script src="js/jquery-1.12.0.min.js"></script>
-        
       <figure class="tabBlock">
           <ul class="tabBlock-tabs">
             <li class="tabBlock-tab is-active"><i class="fa fa-delicious" aria-hidden="true"></i> Your Recipe</li>
@@ -178,7 +180,9 @@
   </div>
   <div class="quit-user-page" onclick="closeUserPage()"><i class="fa fa-arrow-left"></i></div>
 </div>
-<!-- SLIDES -->
+
+<!--============================ SLIDES ============================-->
+
 <section class="banner" id="home"> 
   <div class="slideshow" id="slideshow">
     <div>
@@ -210,7 +214,9 @@
     </div>
   </div> 
 </section> 
-<!-- About -->
+
+<!--============================ ABOUT ============================-->
+
 <section class="about" id="about">
   <div class="about-container">
     <div class="gallery">
@@ -241,7 +247,8 @@
     </div>
   </div>
 </section>
-<!--  -->
+
+<!--============================ CREATE NEW RECIPE - POPUP ============================-->
 <div class="new-recipes-container" style="display: none;">
   <div class="new-recipes-blocker" onclick="closeNewRecipePopup()">
   </div>
@@ -373,8 +380,10 @@
   </div>
   <div class="quit-user-page" onclick="closeNewRecipePopup()"><i class="fa fa-arrow-left"></i></div>
 </div>
-<!-- <div style="text-align: center;"> <h2  style="width: 100%; font-size: 30px;"> - Dishes we offer - </h2> </div> -->
-<!-- FILTER AND SEARCH -->
+
+
+<!--============================ FILTER AND SEARCH ============================-->
+
 <section class="section" id="dishes">
   <span class="section-subtitle"><i2>#</i2>Special</span>
   <h2 class="section-title">Menu of the week</h2>
@@ -421,11 +430,12 @@
   <div class="pagination-button btn-top" ><a href="#dishes"><button id="btn_prev" onclick="prevPage()"><i class="fa fa-chevron-left" aria-hidden="true"></i></button><button id="btn_next" onclick="nextPage()"><i class="fa fa-chevron-right" aria-hidden="true"></i></button></a></div>
   </div>
 
-<!--  -->
+<!--============================ GRID ITEMS ============================-->
 <div class="grid" id="item-container">
    <!-- DISPLAY ITEMS -->
 </div>
-<!-- POPUP RECIPE -->
+
+<!--============= SHOW ITEM - RECIPE -POPUP =============-->
     <div class="form-popup" id="myBlog">
       <div class="blocker" onclick="closeForm()"></div>
       <div class="form-container" id="form"> 
@@ -523,21 +533,21 @@
     <button type="button" class="btn-cancel" onclick="closeForm()"><a>Close</a></button>
     </div>
 </section>
-<!-- CONTACT US -->
+<!--============================ CONTACT US ============================-->
 <section class="contact section" id="contact">
     <div class="contact-container">
         <div class="contact-data">
             <span class="contact-subtitle">Let's talk</span>
             <h2 class="contact-title">Contact us</h2>
-            <p class="contact-description">If you want to reserve a table in our Blog, contact us and we will attend you quickly, with our 24/7 chat service.</p>
+            <p class="contact-description"> -- Wanna create your own Recipe in our Blog?. Join us now</p>
         </div>
 
         <div class="contact-button">
-            <a href="#" class="button">Contact us now</a>
+          <a onclick="signinToggle()" > Create </a>
         </div>
     </div>
 </section>
-<!-- FOOTER -->
+<!--============================ FOOTER ============================-->
 <footer class="footer section" id="footer">
           <div class="footer-container">
             <div class="footer-content">
@@ -590,7 +600,7 @@
 <p class="footer-copy">&#169; 2020-2021 C4EJS_105. All right reserved</p>
         
 </footer>
-<!-- ANIMATION -->
+<!--============================ ANIMATION ============================-->
 <div>
         <div class="intro">
           <div class="intro-text">
