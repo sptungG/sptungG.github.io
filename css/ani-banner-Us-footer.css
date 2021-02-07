@@ -248,6 +248,13 @@
  }
  /* *************** Responsive About Us **************** */
  @media screen and (max-width: 800px) {
+  .intro {
+    padding-left: 15%;
+  }
+  .banner .imgBx {
+    left: 0;
+    width: 100%;
+  }
      .about-container{
          flex-direction: column;
      }

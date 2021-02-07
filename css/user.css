@@ -209,6 +209,16 @@ button.createbtn {
   opacity: 1;
   display: none;
 }
+.quit-new-recipes-popup {
+  position: fixed;
+  z-index: 6004;
+  font-size: 25px;
+  color: #fff;
+  top: 15px;
+  left: 4%;
+  opacity: 1;
+  display: none;
+} 
 
 /*  */
 @media (max-width: 1100px) {

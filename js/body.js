@@ -187,6 +187,10 @@ function closeForm() {
     document.getElementsByClassName('grid')[0].style.position = 'static';
     window.scroll(0,yOffset);
 }
+// prev, next btn reveal 
+// $(window).scroll(function(){
+//     $('#btn_next').addClass('scrolled', $(this).scrollTop() > 1000);
+// });
 
 
 

@@ -32,13 +32,17 @@ mybutton = document.getElementById("myBtn");
 // controlButton = document.getElementsByClassName("pagination-button");        
 // When the user scrolls down 20px from the top of the document, show the button
       window.onscroll = function() {scrollFunction()};
-
+      
       function scrollFunction() {
-        if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+        let heightLimit = document.body.scrollHeight - 2.7*document.getElementById('item-container').scrollHeight;
+        console.log(heightLimit);
+        if (document.body.scrollTop > Number(heightLimit) || document.documentElement.scrollTop > Number(heightLimit)) {
           mybutton.style.display = "block";
           // controlButton.style.display = "block";
+          $('.pagination-button').css('display','block');
         } else {
           mybutton.style.display = "none";
+          $('.pagination-button').css('display','none');
           // controlButton.style.display = "none";
         }
       }

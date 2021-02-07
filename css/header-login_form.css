@@ -286,6 +286,17 @@ border-bottom: 1px solid #434a52;
   .form button:hover {
 	background:#214a80;
   }
+  .login-confirmed, .signup-confirmed {
+    color: #1ac82c;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 0;
+    display: none;
+  }
+  .login-confirmed.confirmed, .signup-confirmed.confirmed {
+    display: block;
+  }
+
 /* Forgot in4 */
   .form .forgot {
     display: block;
