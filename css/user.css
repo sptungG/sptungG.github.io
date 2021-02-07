@@ -201,12 +201,12 @@ button.createbtn {
 }
 .quit-user-page {
   position: fixed;
-  z-index: 5004;
+  z-index: 6004;
   font-size: 25px;
   color: #fff;
   top: 80px;
   left: 4%;
-  opacity: 60%;
+  opacity: 1;
   display: none;
 }
 

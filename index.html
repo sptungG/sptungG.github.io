@@ -5,16 +5,16 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Fine Dish</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header-login_form.css">
+    <link rel="stylesheet" href="css/ani-banner-Us-footer.css">
     <link rel="stylesheet" href="css/user.css">
-    <link rel="stylesheet" href="css/landingpage.css">
+    <link rel="stylesheet" href="css/new_recipe_popup.css">
+    <link rel="stylesheet" href="css/filter-grid_blog-popup_recipe.css">
     <!--  -->
     <!-- <script src="https://kit.fontawesome.com/193000bb3b.js" crossorigin="anonymous"></script> -->
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/new_recipe_popup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -27,7 +27,7 @@
     <div class="header-menu-position">
       <nav class="left-menu"> 
         <a href="index.html" title="HOME"><img src="css/logo.jpg" alt=""></a>
-        <a href="#home" title="HOME"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="#" title="HOME"><i class="fa fa-fw fa-home"></i> Home</a>
         <a href="#about" title="#About Us">About Us</a> 
         <a href="#dishes" title="Get a random Meal.">Hungry?</a>
         <a href="#contact" title="#Contact Us">Contact Us</a> 
@@ -37,7 +37,7 @@
         <button href="#" title="MENU" class="icon" onclick="dropDownMenu()"><a>☰</a></button>       
         <ul id="drop-down-content" class="drop-down-content">
           <li><a href="index.html" title="HOME"><img src="css/logo.jpg" alt=""></a></li>
-            <li><a href="#home" title="HOME"><i class="fa fa-fw fa-home"></i> Home</a></li>
+            <li><a href="#" title="HOME"><i class="fa fa-fw fa-home"></i> Home</a></li>
             <li><a href="#about" title="#About Us">About Us</a></li>
             <li><a href="#dishes" title="Get a random Meal.">Hungry?</a></li>
             <li><a href="#contact" title="#Contact Us">Contact Us</a></li> 
@@ -55,7 +55,6 @@
 					<a href="#"><i class="fa fa-twitter" aria-hidden="true" style="color: aqua;"></i></a>
         </div>
     </div>
-
   <script>
   /* When the user clicks on the button, 
    toggle between hiding and showing the dropdown content */
@@ -362,7 +361,7 @@
         <input type="text" placeholder="Nhập bước tiếp theo" id="insutruction-input">
       </div>
       <div class="new-recipes-instruction-btn">
-        <button onclick="createNewInstruction()"><i class="fas fa-plus-circle"></i></button>
+        <button onclick="createNewInstruction()"><i class="fa fa-plus-circle"></i></button>
       </div>
     </div>
     <div class="new-recipes-confirm-buttons-container">
@@ -372,6 +371,7 @@
       </div>
     </div>
   </div>
+  <div class="quit-user-page" onclick="closeNewRecipePopup()"><i class="fa fa-arrow-left"></i></div>
 </div>
 <!-- <div style="text-align: center;"> <h2  style="width: 100%; font-size: 30px;"> - Dishes we offer - </h2> </div> -->
 <!-- FILTER AND SEARCH -->
