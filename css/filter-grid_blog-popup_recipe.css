@@ -44,7 +44,7 @@ html {
         justify-content: flex-end;
         margin: 5px 0 0 0;
         z-index: var(--z-fixed-min);
-        border-radius: 70% 0 0 0;
+        border-radius: 20% 0 0 0;
   }
 /*==================== Search Bar ====================*/
   .search-bar{
@@ -243,7 +243,12 @@ html {
     background-color: rgba(161, 161, 161, 0.116);
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
-    border-radius: 0 0 40% 0;
+    border-radius: 0 0 20% 0;
+  }
+  @media screen and (min-width: 1400px) {
+    .grid{
+      border-radius: 0 0 10% 0;
+    }
   }
   .section-subtitle{
     font-family: var(--font-blog);
