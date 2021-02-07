@@ -140,7 +140,11 @@
   transition: 0.5s;
   transform: translateY(-5px);
 }
-
+@media screen and (max-width: 800px) {
+  #myBtn {
+    padding: 10px;
+  }
+}
 /*==================== ABOUT US ====================*/
  .about-container{
      position: relative;
