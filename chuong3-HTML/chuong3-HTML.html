@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Chapter III - HTML</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='Counter/counter.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Quote/quote.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='timeSheet/timeSheet.css'>
+</head>
+<body>
+<div class="container">   
+   <div class="container1">
+       <p>Hour: <input id="hour" type="number" max="99" min="0" value="0" /></p>
+       <p>Minutes: <input id="minute" type="number" max="60" min="0" value="0"/></p>
+       <p>Seconds: <input id="sec" type="number" max="60" min="0" value="0"/></p>
+       <div id="timer">00:00:00</div> 
+       <button id ="up-timer" class="btn" >Count Up</button>
+       <button id ="down-timer" class="btn">Count Down</button> 
+       <button id ="stop-timer" class="btn" onclick="clearInterval(startTimer);">Stop time</button> 
+        <button id="reset" class="btn">Reset</button>  
+    </div>
+    <div class="q-container">
+        <h1>Quote of the day</h1>
+        <button id="q-generate"><i>New Quote</i></button>
+        <h3><i class="fa fa-quote-left fa-3x"></i>
+            <span id="q-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur sint iste optio placeat dolor labore, reprehenderit
+            ipsum aspernatur blanditiis maiores.
+          </span></h3>
+        <h4><i>--<span id="q-author">author</span></i></h4>
+    </div>
+    <div class="freaking-math">
+        <button class="btnn"> <a href="freakingmath.html" > <i class="fa fa-chevron-circle-right"></i> FREAKING MATH </a></button>
+    </div>
+</div>
+<div class="time-sheet">
+    <div class="pj-input">
+        <p>Title: <input type="text" placeholder="Enter project" class="new-pj"></p>
+        <p>Task: <input type="text" placeholder="Enter task" class="new-task"></p>
+        <p>Time: <input type="text" placeholder="Time spent" class="new-time"></p>
+    <div class="btn">  
+        <button id="new-pj-add">Add</button>
+        <button id="new-pj-clear">Clear</button>
+    </div>  
+    </div>
+    <table class="table">
+        <thead>
+           <th>Project</th>
+           <th>Task</th>
+           <th>Time spent</th>   
+           <th>Actions</th>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
+</div>
+
+<hr width="1200px" size="1px" align="center" />
+<script src='timeSheet/timeSheet.js'></script>
+<script src='Quote/quote.js'></script>
+<script src='Counter/counter.js'></script>
+</body>
+</html>
