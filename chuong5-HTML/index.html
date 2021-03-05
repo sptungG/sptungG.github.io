@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/193000bb3b.js" crossorigin="anonymous"></script>
+    <script src="data.js"></script>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <div id="task" class="task">
+        <h1>Time Sheet</h1>
+        <div class="input">
+            <input type="text" placeholder="Enter project" class="newpj">
+            <input type="text" placeholder="Enter task" class="newpj">
+            <input type="text" placeholder="Time spent" class="newpj">
+            <button id="newpj_add">Add</button>
+            <button id="newpj_clear" name="">Clear</button>
+        </div>
+        <table class="table">
+            <thead>
+               <th>Project</th>
+               <th>Task</th>
+               <th>Time spent</th>   
+               <th>Actions</th>
+            </thead>
+            <tbody id="ts_body">
+            </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
