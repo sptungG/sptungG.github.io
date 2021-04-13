@@ -12,14 +12,21 @@ let employee4 = new Tester('Tùng-4','test');
 let employee5 = new Tester('Tùng-5','test');
 let employee6 = new Tester('Tùng-6','test');
 let employee7 = new Tester('Tùng-7','test');
-let manager1  = new Manager('Tùng', 'manage', [employee1,employee2,employee3]);
+
 const employeeList = [employee1,employee2,employee3,employee4,employee5,employee6,employee7];
 
-manager1.show();
-// manager1.addEmployee(employee1)
-manager1.addEmployee(employee1,employee2,employee3,employee4,employee5,employee6,employee7);
+let manager1  = new Manager('Tùng', 'manage', employeeList);
+
 console.log("---------------------------------------------------");
 for (let i = 0; i < employeeList.length ; i++){
     employeeList[i].displayInfo();
 }
 console.log("---------------------------------------------------");
+
+manager1.show();
+
+console.log("ADD employees:");
+manager1.addEmployee(employee1,employee2,employee3,employee4,employee5,employee6);
+
+
+// manager1.addEmployee(employee1)

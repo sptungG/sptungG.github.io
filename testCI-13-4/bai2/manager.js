@@ -21,12 +21,15 @@ class Manager extends Employee{
     }
 
     show() {
-        if (this.employees.length > 0) {
-          console.log(this.employees);
-        } 
+        if (this.employees.length > 0){
+            console.log("Your employees:");
+        for (let i = 0; i < this.employees.length ; i++){
+                console.log(this.employees[i]);
+        }} 
         else {
-          console.log("No employee");
+          console.log("You haven't manage any employee");
         }
       }
 }
+
 export default Manager;
