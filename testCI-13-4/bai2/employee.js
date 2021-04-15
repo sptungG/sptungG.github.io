@@ -9,5 +9,7 @@ class Employee {
     displayInfo = () => {
         console.log(`|  NAME: ${this.name} | taskList: ${this.taskList} |`);
     }
+
+    
 }
 export default Employee;
