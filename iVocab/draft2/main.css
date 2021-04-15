@@ -1141,7 +1141,7 @@ button.vjs-play-control.vjs-control.vjs-button {
        z-index: var(--z-fixed-mid-1); 
     
        object-fit: cover;
-       border-radius: 20% 5%;
+       border-radius: 5%;
        transition: 0.05s; 
    }
    
@@ -1154,8 +1154,8 @@ button.vjs-play-control.vjs-control.vjs-button {
        z-index: var(--z-fixed-mid-1);
        padding-left: 30px;
        padding-right: 100px;
-       border-radius: 0 8px 8px 0;
-       background: rgba(0 ,0 ,0 , 0.2);
+       border-radius: 8px;
+       background: rgba(0, 0, 0, 0.527);
        margin: 5px 0; 
    }
    
@@ -1167,8 +1167,9 @@ button.vjs-play-control.vjs-control.vjs-button {
    }
    .contentBx p{
        color: #fff;
-       font-weight: 100;
+       font-weight: 300;
        font-size: 1.2em;
+       text-shadow: 0 1px 3px #000000
    }
    .contentBx a{
        font-size: 1.1em;
