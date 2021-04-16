@@ -303,7 +303,7 @@ body:before {
           animation: bottom 0.8s var(--delay) both;
 }
 /* main header - tittle =====================*/
-.main-header {
+.text-primary {
   font-size: 30px;
   color: #fff;
   font-weight: 700;
