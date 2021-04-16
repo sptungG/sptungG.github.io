@@ -64,3 +64,12 @@ setInterval(function() {
     .end()
     .appendTo('#slideshow');
 },  6000);
+
+$(function () {
+  $('span').click(function () {
+      $('#datalist li:hidden').slice(0, 2).show();
+      if ($('#datalist li').length == $('#datalist li:visible').length) {
+          $('span ').hide();
+      }
+  });
+});
