@@ -1,0 +1,285 @@
+/* ========================= GRID BLOG ========================= */
+.grid {
+  display: grid;
+  grid-gap: 0.6rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  grid-auto-rows: 0.5rem;
+  z-index: var(--z-fixed-min);
+}
+
+/* Non-grid specific CSS */  
+ .grid{
+    margin: 5px 0 !important;
+    padding: 5px;
+    color: var(--color-font-blog);
+    font-size: 1.15em;
+    background-color: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 0 0 20% 0;
+}
+@media screen and (min-width: 1400px) {
+  .grid{
+    border-radius: 0 0 10% 0;
+  }
+}
+hr{
+  --color: #111;
+  border-color: var(--color);
+  width: 90%;
+}
+.item {
+  margin: auto 3px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: .25rem;
+  background-color: var(--backg-color-item);
+   transform-style: preserve-3d;
+  cursor: pointer;
+}
+.item:hover{
+  cursor: pointer;
+}
+
+.title {
+  padding: 7px;
+  margin-left: 3px;
+  z-index: var(--z-fixed-min);
+ }
+
+
+.title h3{
+  font-family: var(--font-main);
+  font-weight: lighter;
+  text-decoration: none;
+  text-transform: initial;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 0 0 2px #0202027c;
+  text-align: left;
+  filter: brightness(130%);
+}
+.blog .title{
+  position: absolute;
+}
+
+.desc{
+  padding: 3px;
+}
+.desc p{
+  font-family: var(--font-blog);
+  color: #fff;
+  text-shadow: 0 2px #111;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+  -webkit-font-smoothing: antialiased;
+  text-indent: 5px;
+  margin-bottom: 10px; 
+}
+
+/*  */
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.61);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  color: black;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+
+/*==================== prev and next button ====================*/
+.btn-bottom {
+  display: none;
+}
+.pagination-button {
+  margin: 5px auto;
+  width: 200px;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#btn_prev, #btn_next {
+  padding: 2px 5px;
+  font-size: 25px;
+  display: inline-block;
+  border: none;
+  user-select: none;
+  cursor: pointer;
+  z-index: var(--z-fixed-mid);
+  background-color: rgba(126, 126, 126, 0.411);
+  color: #fff;
+}
+#btn_next.scrolled, #btn_prev.scrolled {
+  display: inline-block;
+}
+#btn_prev:hover{
+  background-color: lightgray;
+  transform: translateX(-2px);
+  transition: 0.4s;
+} 
+#btn_next:hover {
+  background-color: lightgray;
+  transform: translateX(2px);
+  transition: 0.4s;
+}
+#btn_prev{
+  left: 0;
+  border-radius: 8px;
+}
+#btn_next{
+  right: 0;
+  border-radius: 8px;
+}
+
+/*======================== POPUP ========================*/
+  .blocker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .form-popup {
+    background: rgba(100, 100, 100, 0.5);
+    position: fixed;
+    display: none;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: var(--z-fixed-max);
+  }
+  .form-container {
+    display: flex;
+    overflow-y: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 50vw;
+    height: fit-content;
+    position: fixed;
+    z-index: var(--z-fixed-max);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    overflow-y: hidden;
+    padding: 30px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+    color: #333;
+    font-size: 20px;
+    background: var(--backg-color-item);
+  }
+  /*==================== Food Title ====================*/
+  .more-detail-title{
+    position: relative;
+    font-family: var(--font-main);
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 5px;
+    text-shadow: 0 0 5px #ffffff;
+  }
+  /* Line */
+  /* Food description */
+  .more-detail-desc p{
+    font-size: 20px !important;
+    font-family: var(--font-blog);
+    margin: 10px 0;
+  }
+  /* icon */
+  .form-popup a{
+    margin: 3px;
+    color: burlywood;
+  }
+  /* recipe category */
+  .more-detail-topic span {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  /*==================== Favorite & Share ====================*/
+  .comment-label-share {
+    display: flex;
+    flex-direction: row;
+  }
+  .share-article {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin-bottom: 50px;
+  }
+  
+  .love-action {
+    border: 2px rgb(184,184,184) solid;
+    font-size: 18px;
+    color: rgb(184,184,184);
+    padding: 8px 10px 0px 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 60px;
+  }
+  .love-action:hover {
+    border-color: #787878;
+    color: #787878;
+  }
+  .love-action.active {
+    transition: 0.5s;
+    border-color: #cc1919;
+    color: #cc1919;
+  }
+  /* *************** Responsive PopUP **************** */
+  @media screen and (max-width: 800px) {
+    .more-detail-ingredients-title {
+      text-align: left;
+  }
+    .form-container{
+      width: 100vw;
+      padding: 0 10px;
+    }
+
+
+  }
+  
