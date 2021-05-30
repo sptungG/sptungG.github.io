@@ -71,7 +71,7 @@ distance: '30px',
 duration: 1200,
 reset: true,
 });
-sr.reveal(`.about-img,.contact-data,.contact-button,.footer-content`, {interval: 200});
+sr.reveal(`.about-img`, {interval: 200});
 /*====================  ====================*/
 $("#slideshow > div:gt(0)").hide();
 setInterval(function() { 
