@@ -29,6 +29,8 @@
   cursor: pointer;
   font-family: var(--body-font);
   margin: 13px 0;
+  width: 100%;
+  z-index: 5000;
 }
 .btn:hover{
   color: #fff;

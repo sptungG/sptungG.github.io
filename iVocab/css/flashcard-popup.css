@@ -90,6 +90,7 @@ hr{
 }
 
 .flip-card-inner {
+  border-radius: 10px;
   position: relative;
   width: 100%;
   height: 100%;
