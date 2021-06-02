@@ -859,7 +859,7 @@ let recipes = [
             "Đảo đều cho tôm và thịt"
         ],
         "favorited_amount": "172",
-        description: "<i1>Kuymak</i1> is a regional meal of Turkey's Black Sea region's sides. Its primary ingredients are corn meal and cheese. and is typically served with bread and a spoon.",
+        description: "<i1>Kuymak</i1> is a regional meal of Turkey's Black Sea region's sides. Its primary ingredients are corn meal and cheese. and is typically served with bread and a spoon",
     },
     {
         "id": "20",
