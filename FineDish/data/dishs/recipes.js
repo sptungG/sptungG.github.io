@@ -824,6 +824,44 @@ let recipes = [
         description: '<i1>Tôm rang thịt</i1> là món ăn được nhiều người yêu thích, có cách làm đơn giản, nhanh gọn, hương vị đậm đà, hấp dẫn. Với sự kết hợp tinh tế từ thịt và tôm, xen lẫn mùi tỏi phi, hài hòa gia vị chắc chắn sẽ khiến bạn chỉ muốn ăn mãi không thôi.',
     },
     {
+        "id": "19",
+        "name": "Kuymak",
+        "category": "asia",
+        "difficult": "easy",
+        "time": "8",
+        "type": "bf",
+        "ingredients": [
+            75,
+            27,
+            13,
+            76
+        ],
+        "ingredients_amount": [
+            125,
+            0.6666666666666666,
+            2,
+            100
+        ],
+        "img": "https://cdn.tasteatlas.com/images/dishes/a2a4d36c2f294db28ff5e2c780b0bc75.jpg?mw=1300",
+        "recipe_instruction": [
+            "Tôm rút chỉ đen",
+            " rửa sạch",
+            " thấm khô",
+            "Thịt ba chỉ xắt miếng mỏng",
+            "Hành",
+            " tỏi băm nhỏ",
+            "Phi hành tỏi cho thật thơm",
+            "cho thịt vào đảo đều",
+            "Đợi thịt hết màu đỏ thì cho tôm vào đảo cùng thịt",
+            "Khi tôm chuyển sang màu đỏ và hơi săn lại thì cho nước mắm",
+            " nước hàng",
+            " đường",
+            "Đảo đều cho tôm và thịt"
+        ],
+        "favorited_amount": "172",
+        description: "<i1>Kuymak</i1> is a regional meal of Turkey's Black Sea region's sides. Its primary ingredients are corn meal and cheese. and is typically served with bread and a spoon.",
+    },
+    {
         "id": "20",
         "name": "Pancake",
         "category": "foreign",
