@@ -64,7 +64,7 @@ let recipes = [
             2,
             1
         ],
-        "img": "https://scontent.fhan2-6.fna.fbcdn.net/v/t1.0-9/86188253_117280523170683_3167674501198512128_n.jpg?_nc_cat=104&ccb=2&_nc_sid=730e14&_nc_ohc=a7WlcBFCpwEAX-JDSms&_nc_ht=scontent.fhan2-6.fna&oh=ea639d9b672bbeced1c3102dc1e05b23&oe=60307542",
+        "img": "https://cdn.24h.com.vn/upload/2-2018/images/2018-06-08/1528393105-860-_mg_6781-1528392856-width650height433.jpg",
         "recipe_instruction": [
             "Sườn chặt miếng bằng bao diêm, ướp muối. Rán chín vàng.",
             "Cà chua băm nhỏ, đun chín mềm, lọc lấy bột.",
@@ -176,7 +176,7 @@ let recipes = [
             0.5,
             2
         ],
-        "img": "https://scontent.fhan2-4.fna.fbcdn.net/v/t1.0-9/83225098_117280446504024_8909978959144288256_n.jpg?_nc_cat=110&ccb=2&_nc_sid=730e14&_nc_ohc=NhInqbP9TfsAX9Z0781&_nc_ht=scontent.fhan2-4.fna&oh=6440481b044d21975db1762fbd0b82c6&oe=6031BA3B",
+        "img": "https://media.doanhnghiepvn.vn/Images/Uploaded/Share/2020/07/02/Mang-tay-xao-toi-thom-ngon-an-mot-lan-nho-mai_2.jpg",
         "recipe_instruction": [
             "Măng tây bỏ đi phần thân dai! Cứ bẻ chỗ nào mà không bẻ được là chỗ đó bị già, cần bỏ đi chứ ăn sẽ không ngon!",
             "Có thể để nguyên cây măng tây hoặc bẻ đôi hoặc bẻ 3 cho vừa miệng.",
@@ -822,44 +822,6 @@ let recipes = [
         ],
         "favorited_amount": "64",
         description: '<i1>Tôm rang thịt</i1> là món ăn được nhiều người yêu thích, có cách làm đơn giản, nhanh gọn, hương vị đậm đà, hấp dẫn. Với sự kết hợp tinh tế từ thịt và tôm, xen lẫn mùi tỏi phi, hài hòa gia vị chắc chắn sẽ khiến bạn chỉ muốn ăn mãi không thôi.',
-    },
-    {
-        "id": "19",
-        "name": "Kuymak",
-        "category": "asia",
-        "difficult": "easy",
-        "time": "8",
-        "type": "bf",
-        "ingredients": [
-            75,
-            27,
-            13,
-            76
-        ],
-        "ingredients_amount": [
-            125,
-            0.6666666666666666,
-            2,
-            100
-        ],
-        "img": "https://cdn.tasteatlas.com/images/dishes/a2a4d36c2f294db28ff5e2c780b0bc75.jpg?mw=1300",
-        "recipe_instruction": [
-            "Tôm rút chỉ đen",
-            " rửa sạch",
-            " thấm khô",
-            "Thịt ba chỉ xắt miếng mỏng",
-            "Hành",
-            " tỏi băm nhỏ",
-            "Phi hành tỏi cho thật thơm",
-            "cho thịt vào đảo đều",
-            "Đợi thịt hết màu đỏ thì cho tôm vào đảo cùng thịt",
-            "Khi tôm chuyển sang màu đỏ và hơi săn lại thì cho nước mắm",
-            " nước hàng",
-            " đường",
-            "Đảo đều cho tôm và thịt"
-        ],
-        "favorited_amount": "172",
-        description: "<i1>Kuymak</i1> is a regional meal of Turkey's Black Sea region's sides. Its primary ingredients are corn meal and cheese. and is typically served with bread and a spoon. Viet ngu add kuymak vao lam qq gi eo co cong thuc :))",
     },
     {
         "id": "20",
